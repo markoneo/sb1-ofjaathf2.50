@@ -1,0 +1,23 @@
+/* Custom utility classes */
+.text-shadow {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.text-shadow-lg {
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Payment method card styles */
+.payment-method-card {
+  @apply bg-white p-4 rounded-lg shadow-sm border border-gray-200;
+  @apply flex items-center justify-center;
+  @apply w-24 h-16;
+  @apply transition-all duration-200;
+  @apply hover:scale-105 hover:shadow-md hover:border-blue-200;
+}
+
+/* Payment method card hover animation */
+.payment-method-card:hover img {
+  @apply transform scale-110;
+  transition: transform 0.2s ease-in-out;
+}
